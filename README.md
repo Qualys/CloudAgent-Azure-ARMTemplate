@@ -37,3 +37,6 @@ _**Ensure that you input all the required fields asked in parameters section.**_
 
 ## Important Links
 **[How to Retrieve License Code from Qualys Subscription](https://community.qualys.com/docs/DOC-5823-deploying-qualys-cloud-agents-from-microsoft-azure-security-center)**
+
+**NOTE: Provisioning status of VM extension for Windows returns error, however, it works as it was expected to. We are working on listing proper status messages.
+{"code":"DeploymentFailed","message":"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.","details":[{"code":"Conflict","message":"{\r\n \"status\": \"Failed\",\r\n \"error\": {\r\n \"code\": \"ResourceDeploymentFailure\",\r\n \"message\": \"The resource operation completed with terminal provisioning state 'Failed'.\",\r\n \"details\": [\r\n {\r\n \"code\": \"VMExtensionProvisioningError\",\r\n \"message\": \"VM has reported a failure when processing extension 'QualysAgent'. Error message: \\\"\\\".\"\r\n }\r\n ]\r\n }\r\n}"}]}
