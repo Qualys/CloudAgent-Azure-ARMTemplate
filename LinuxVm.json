@@ -5,7 +5,7 @@
     "vmName": {
       "type": "string"
     },
-    "location": {
+    "vmlocation": {
       "type": "string"
     },
     "LicenseCode": {
@@ -16,7 +16,7 @@
     {
       "name": "[concat(parameters('vmName'),'/QualysAgentLinux')]",
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "location": "[parameters('location')]",
+      "location": "[parameters('vmlocation')]",
       "apiVersion": "2015-06-15",
       "properties": {
         "publisher": "Qualys",
