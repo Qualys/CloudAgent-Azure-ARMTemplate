@@ -21,7 +21,9 @@ You can use Azure Resource Manager template to install Cloud Agent (CA) on Azure
 PS C:\ New-AzureRmResourceGroupDeployment -VMName VM_NAME -ResourceGroupName RESOURCE_GROUP_NAME -Location VM_LOCATION -TemplateFile TEMPLATE_FILE_PATH -TemplateParameterFile TEMPLATE_PARAMETER_FILE_PATH
 
 Where,
+
 [TEMPLATE_FILE_PATH](LinuxVm.json) = the path of the template file ()
+
 [TEMPLATE_PARAMETER_FILE_PATH](/Example/azuredeploy-parameters.json) = the path of parameter file for the template 
 
 _**Ensure that you input all the required fields asked in parameters section.**_
