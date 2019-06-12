@@ -1,9 +1,9 @@
 # CloudAgent-Azure-ARMTemplate
 Installing Cloud Agent on Azure Virtual Machines by using Azure Resource Manager template
 
-[![Deploy to Azure Linux VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FLinuxVm.json)
-[![Deploy to Azure Windows VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FWindowsVm.json)
-[![Visualize](http://armviz.io/visualizebutton.png)](http://armviz.io/#/?load=https://raw.githubusercontent.com/Qualys-Public/CloudView-Connector-Azure/master/Template/azuredeploy.json)
+* For Linux VM: [![Deploy to Azure Linux VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FLinuxVm.json)
+
+* For Windows VM: [![Deploy to Azure Windows VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FWindowsVm.json)
 
 
 ## License
