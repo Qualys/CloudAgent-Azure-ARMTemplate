@@ -35,4 +35,5 @@ utilize [**azuredeploy-parameters.json**](/Example/azuredeploy-parameters.json) 
 
 _**Ensure that you input all the required fields asked in parameters section.**_
 
-**Note: [How to Retrieve License Code from Qualys Subscription](https://community.qualys.com/docs/DOC-5823-deploying-qualys-cloud-agents-from-microsoft-azure-security-center)**
+## Important Links
+**[How to Retrieve License Code from Qualys Subscription](https://community.qualys.com/docs/DOC-5823-deploying-qualys-cloud-agents-from-microsoft-azure-security-center)**
