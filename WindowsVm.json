@@ -1,0 +1,35 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+      "type": "string"
+    },
+    "vmlocation": {
+      "type": "string"
+    },
+    "LicenseCode": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "name": "[concat(parameters('vmName'),'/QualysAgent')]",
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "location": "[parameters('vmlocation')]",
+      "apiVersion": "2015-06-15",
+      "properties": {
+        "publisher": "Qualys",
+        "type": "QualysAgent",
+        "typeHandlerVersion": "1.6",
+        "autoUpgradeMinorVersion": false,
+        "settings": {
+          "LicenseCode": "[parameters('LicenseCode')]",
+		      "ResourceID": "",
+		      "VmRegion": "",
+		      "Logging": ""
+        }
+      }
+    }
+  ]
+}
