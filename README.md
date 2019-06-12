@@ -15,9 +15,14 @@ _**THIS SCRIPT IS PROVIDED TO YOU "AS IS."  TO THE EXTENT PERMITTED BY LAW, QUAL
 You can use Azure Resource Manager template to install Cloud Agent (CA) on Azure Linux or Windows VM using VM extension.
 
 ## Usage
-Click on Deply to Azure icon.
-[![Deploy to Azure Linux VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FLinuxVm.json)
-[![Deploy to Azure Windows VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FWindowsVm.json)
+`Using Azure Portal`
+* Deploy CA on Linux VM [![Deploy to Azure Linux VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FLinuxVm.json)
+
+* Deploy CA on Windows VM [![Deploy to Azure Windows VM](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FQualys-Public%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FWindowsVm.json)
+
+**OR** 
+
+`Using Powershell`
 
 _**Ensure that you input all the required fields asked in parameters section.**_
 
