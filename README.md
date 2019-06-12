@@ -22,11 +22,9 @@ PS C:\ New-AzureRmResourceGroupDeployment -VMName VM_NAME -ResourceGroupName RES
 
 Where,
 
-[TEMPLATE_FILE_PATH](LinuxVm.json) = the path of the template file ()
+[TEMPLATE_FILE_PATH](LinuxVm.json) = the path of the template file
 
 [TEMPLATE_PARAMETER_FILE_PATH](/Example/azuredeploy-parameters.json) = the path of parameter file for the template 
-
-_**Ensure that you input all the required fields asked in parameters section.**_
 
 **Input Parameters:**
 utilize [**azuredeploy-parameters.json**](/Example/azuredeploy-parameters.json) as an example to supply parameters field.
@@ -35,3 +33,6 @@ utilize [**azuredeploy-parameters.json**](/Example/azuredeploy-parameters.json) 
 * _vmlocation: The location of the Virtual Machine_
 * _LicenseCode: The License Code from your Qualys Subscription_
 
+_**Ensure that you input all the required fields asked in parameters section.**_
+
+**Note: [How to Retrieve License Code from Qualys Subscription](https://community.qualys.com/docs/DOC-5823-deploying-qualys-cloud-agents-from-microsoft-azure-security-center)**
