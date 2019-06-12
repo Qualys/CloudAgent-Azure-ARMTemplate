@@ -24,7 +24,7 @@ _**Ensure that you input all the required fields asked in parameters section.**_
 **Input Parameters:**
 utilize [**azuredeploy-parameters.json**](/Example/azuredeploy-parameters.json) as an example to supply parameters field.
 
-* _vmName: The name of the Virtual Machine where you want to install Qualys CA
-* _vmlocation: The location of the Virtual Machine
-* _LicenseCode: The License Code from your Qualys Subscription
+* _vmName: The name of the Virtual Machine where you want to install Qualys CA_
+* _vmlocation: The location of the Virtual Machine_
+* _LicenseCode: The License Code from your Qualys Subscription_
 
