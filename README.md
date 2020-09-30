@@ -16,8 +16,8 @@ Extensions can be bundled with a new VM deployment, or run against any existing 
 ## Pre-Requisites:
 1. User should have an active Qualys subscription.
 2. User should have have License Code available with them. To know more about retrieving License code, click here.
-3. Ensure you have sufficient permissions to create and deploy Azure ARM templates using Azure Portal. To know more about the permissions required, please refer the [permissions](https://github.com/sadanandn84/Azure/blob/master/Readme.md#permissions-required-for-deploying-azure-arm-template) section.
-4. If using Powershell to deploy the ARM template, ensure Azure powershell cmdlets is installed in you system. 
+3. Ensure you have sufficient permissions to create and deploy Azure ARM templates using Azure Portal. To know more about the permissions required, please refer the [permissions](https://github.com/Qualys/CloudAgent-Azure-ARMTemplate/blob/master/Readme.md#permissions-required-for-deploying-azure-arm-template) section.
+4. If using Powershell to deploy the ARM template, ensure Azure powershell cmdlets is installed in you system.
 
 ## Permissions required for deploying Azure ARM template:
 The following are permissions required specific to list, deploy, validate and update Azure ARM template:
@@ -26,14 +26,14 @@ The following are permissions required specific to list, deploy, validate and up
 - Microsoft.Resources/deployments/write                     | Creates or updates an deployment.
 - Microsoft.Resources/deployments/validate/action           | Validates an deployment.
 - Microsoft.Resources/deployments/operations/read           | Gets or lists deployment operations.
-- Microsoft.Resources/deployments/operationstatuses/read    | Gets or lists deployment operation statuses. 
+- Microsoft.Resources/deployments/operationstatuses/read    | Gets or lists deployment operation statuses.
 ```
 Apart from this access permissions specific to Virtual Machines extensions are required as well, i.e :
 ```
-- Microsoft.Compute/virtualMachines/extensions/read         | Get the properties of a virtual machine extension 
+- Microsoft.Compute/virtualMachines/extensions/read         | Get the properties of a virtual machine extension
 - Microsoft.Compute/virtualMachines/extensions/write        | Creates a new virtual machine or updates an existing one.
 ```
-For further understanding, refer the **Understanding the different roles** and **Azure Built-in roles** in [Reference Links](https://github.com/sadanandn84/Azure/blob/master/Readme.md#reference-links) section.
+For further understanding, refer the **Understanding the different roles** and **Azure Built-in roles** in [Reference Links](https://github.com/Qualys/CloudAgent-Azure-ARMTemplate/blob/master/README.md#reference-links) section.
 
 ## How to Use
 ### Using Azure portal
@@ -41,11 +41,11 @@ For further understanding, refer the **Understanding the different roles** and *
 
 Deploy Cloud Agent on Windows VM(s)
 
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsadanandn84%2FAzure%2Fmaster%2FWindowsQCA.json)
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fqualys%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FWindowsQCA.json)
 
 Deploy Cloud Agent on Linux VM(s)
 
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsadanandn84%2FAzure%2Fmaster%2FLinuxQCA.json)
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fqualys%2FCloudAgent-Azure-ARMTemplate%2Fmaster%2FLinuxQCA.json)
 
 2. This will open a pane within Azure portal that allows you to easily provide input parameter values
 
@@ -57,7 +57,7 @@ Deploy Cloud Agent on Linux VM(s)
 - *LicenseCode: This field accepts input as the license code that was retrieved from Qualys subscription.*
 
 3. Once, you complete with filling of all the required input parameter fields. click **Review + create**.
-4. The portal navigates to **Review + create** pane where template gets validated. 
+4. The portal navigates to **Review + create** pane where template gets validated.
 5. Once, you get **Validation Passed** status, click **Create** to deploy the template.
 
 ### Using Powershell
@@ -78,15 +78,15 @@ For the example script above, we are referring local file name as **c:\MyTemplat
 
 ***PS C:\New-AzResourceGroupDeployment -Name Example_deployment -ResourceGroupName Example_resourcegroup -TemplateUri https://raw.githubusercontent.com/Azure/master/azuredeploy.json -TemplateParameterUri https://raw.githubusercontent.com/Azure/master/azuredeploy.parameters.json***
 
-Where, 
-- ***[TemplateFile](https://github.com/sadanandn84/Azure/blob/master/Example_templates_parameter_file/exampleTemplate.json)***: Will accept the local file path of the ARM JSON template is stored.
-- ***[TemplateParameterFile](https://github.com/sadanandn84/Azure/blob/master/Example_templates_parameter_file/example.parameters.json)***: will accept the local file path where Parameter JSON file is stored.
+Where,
+- ***[TemplateFile](https://github.com/Qualys/CloudAgent-Azure-ARMTemplate/tree/master/Example_templates_parameter_file/exampleTemplate.json)***: Will accept the local file path of the ARM JSON template is stored.
+- ***[TemplateParameterFile](https://github.com/Qualys/CloudAgent-Azure-ARMTemplate/tree/master/Example_templates_parameter_file/example.parameters.json)***: will accept the local file path where Parameter JSON file is stored.
 - ***TemplateUri***: Is the external location of the template file and
 - ***TemplateParameterUri***: Is the external location of the parameter file.
 
 **NOTE: THE POWERSHELL SCRIPTS MENTIONED ABOVE ARE AN EXAMPLE, PLEASE REPLACE THE VALUES AS PER THE REQUIREMENTS**
 
-For further more detailed information on how parameters can be passed as Inline values or deploy from Azure cloud shell, please refer the [Reference Links](https://github.com/sadanandn84/Azure/blob/master/Readme.md#reference-links) section.
+For further more detailed information on how parameters can be passed as Inline values or deploy from Azure cloud shell, please refer the [Reference Links](https://github.com/Qualys/CloudAgent-Azure-ARMTemplate/blob/master/README.md#reference-links) section.
 
 ## Reference Links
 - [How to Retrieve License Code from Qualys Subscription](https://qualys-secure.force.com/discussions/s/article/000005837#license), please refer **Retrieve the License Code and Public Key from your Qualys Subscription** section.
@@ -96,8 +96,3 @@ For further more detailed information on how parameters can be passed as Inline 
 - [Azure Built-in roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)
 - [Get Started with Azure Powershell](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps?view=azps-4.6.1)
 - [Powershell cmdlet for Resources](https://docs.microsoft.com/en-us/powershell/module/az.resources/?view=azps-4.6.1#resources)
-
-
-
-
-
