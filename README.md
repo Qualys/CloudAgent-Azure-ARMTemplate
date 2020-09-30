@@ -76,7 +76,7 @@ For the example script above, we are referring local file name as **c:\MyTemplat
 
 #### `B. In case, your template file and parameter file are stored on external locations (such as Github, Azure Storage, etc.)`
 
-***PS C:\New-AzResourceGroupDeployment -Name Example_deployment -ResourceGroupName Example_resourcegroup -TemplateUri https://raw.githubusercontent.com/Azure/master/azuredeploy.json -TemplateParameterUri https://raw.githubusercontent.com/Azure/master/azuredeploy.parameters.json***
+***PS C:\New-AzResourceGroupDeployment -Name Example_deployment -ResourceGroupName Example_resourcegroup -TemplateUri https://raw.githubusercontent.com/qualys/master/azuredeploy.json -TemplateParameterUri https://raw.githubusercontent.com/qualys/CloudAgent-Azure-ARMTemplate/master/azuredeploy.parameters.json***
 
 Where,
 - ***[TemplateFile](https://github.com/Qualys/CloudAgent-Azure-ARMTemplate/tree/master/Example_templates_parameter_file/exampleTemplate.json)***: Will accept the local file path of the ARM JSON template is stored.
