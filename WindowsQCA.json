@@ -3,9 +3,9 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmName": {
-      "type": "string"
+      "type": "array"
     },
-    "vmlocation": {
+    "vmLocation": {
       "type": "string"
     },
     "LicenseCode": {
@@ -14,9 +14,9 @@
   },
   "resources": [
     {
-      "name": "[concat(parameters('vmName'),'/QualysAgent')]",
+      "name": "[concat(parameters('vmName')[copyIndex()],'/QualysAgent')]",
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "location": "[parameters('vmlocation')]",
+      "location": "[parameters('vmLocation')]",
       "apiVersion": "2015-06-15",
       "properties": {
         "publisher": "Qualys",
@@ -24,12 +24,13 @@
         "typeHandlerVersion": "1.6",
         "autoUpgradeMinorVersion": false,
         "settings": {
-          "LicenseCode": "[parameters('LicenseCode')]",
-		      "ResourceID": "",
-		      "VmRegion": "",
-		      "Logging": ""
+          "LicenseCode": "[parameters('LicenseCode')]"
         }
-      }
+      },
+      "copy": {
+          "name": "vmCopy",
+          "count": "[length(parameters('vmName'))]"
+        }
     }
   ]
 }

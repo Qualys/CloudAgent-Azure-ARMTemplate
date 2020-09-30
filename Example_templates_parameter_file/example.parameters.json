@@ -1,0 +1,15 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+      "value": ["MyVM01", "MyVM02", "MyVM03"]
+    },
+    "vmLocation": {
+      "value": "West US 2"
+    },
+    "LicenseCode": {
+      "value": "sdfkhjsajhdflkjsaghdlfks.ldkfhslhdf;lsahkjdlkjfhsadkjhfkjhfkjsdhfkjdshfhidhsfkj"
+    }
+  }
+}
